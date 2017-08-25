@@ -17,4 +17,8 @@ public abstract class Item {
     public double getPrice() {
         return price;
     }
+
+    public String getBrand() {
+        return brand;
+    }
 }

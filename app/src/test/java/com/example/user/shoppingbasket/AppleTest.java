@@ -15,7 +15,7 @@ public class AppleTest {
 
     @Before
     public void before() {
-        apple = new Apple(0.30, "Golden Delicious", "Own Brand");
+        apple = new Apple(0.30, "Own Brand", "Golden Delicious");
     }
 
     @Test
