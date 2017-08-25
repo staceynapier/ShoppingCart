@@ -18,4 +18,8 @@ public class Basket {
     public int itemCount() {
         return contents.size();
     }
+
+    public void clearBasket() {
+        contents.clear();
+    }
 }
