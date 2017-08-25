@@ -8,8 +8,8 @@ public class Apple extends Item {
 
     String type;
 
-    public Apple(double price, String type) {
-        super(price);
+    public Apple(double price, String brand, String type) {
+        super(price, brand);
         this.type = type;
     }
 

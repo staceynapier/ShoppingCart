@@ -7,9 +7,11 @@ package com.example.user.shoppingbasket;
 public abstract class Item {
 
     private Double price;
+    private String brand;
 
-    public Item(Double price){
+    public Item(Double price, String brand){
         this.price = price;
+        this.brand = brand;
     }
 
     public double getPrice() {

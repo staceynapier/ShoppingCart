@@ -15,7 +15,7 @@ public class AppleTest {
 
     @Before
     public void before() {
-        apple = new Apple(0.30, "Golden Delicious");
+        apple = new Apple(0.30, "Golden Delicious", "Own Brand");
     }
 
     @Test
@@ -26,5 +26,10 @@ public class AppleTest {
     @Test
     public void hasType(){
         assertEquals("Golden Delicious", apple.getType());
+    }
+
+    @Test
+    public void hasBrand(){
+        assertEquals("Own Brand", apple.getBrand());
     }
 }
