@@ -21,4 +21,5 @@ public abstract class Item {
     public String getBrand() {
         return brand;
     }
+
 }

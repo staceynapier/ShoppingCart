@@ -53,7 +53,7 @@ public class BasketTest {
     public void canCalculateTotal(){
         basket.add(apple);
         basket.add(banana);
-        assertEquals(0.95, basket.calculateTotal();
+        assertEquals(0.95, basket.calculateTotal());
     }
 
 }

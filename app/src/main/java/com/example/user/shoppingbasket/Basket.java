@@ -26,4 +26,13 @@ public class Basket {
     public void removeItem(Item item) {
         contents.remove(item);
     }
+
+    public double calculateTotal() {
+        double total = 0;
+        for (Item item : contents) {
+            double price = item.getPrice();
+            total = total + price;
+        }
+        return total;
+    }
 }
