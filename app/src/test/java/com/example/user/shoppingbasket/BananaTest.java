@@ -22,4 +22,9 @@ public class BananaTest {
     public void hasPrice(){
         assertEquals(0.50, banana.getPrice());
     }
+
+    @Test
+    public void hasBrand(){
+        assertEquals("Del Monte", banana.getBrand());
+    }
 }
