@@ -3,6 +3,8 @@ package com.example.user.shoppingbasket;
 import org.junit.Before;
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
+
 /**
  * Created by user on 25/08/2017.
  */
@@ -23,7 +25,7 @@ public class BasketTest {
     @Test
     public void canAddToBasket(){
         basket.add(banana);
-
+        assertEquals(1, basket.itemCount());
     }
 
 }
