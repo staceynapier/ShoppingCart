@@ -28,4 +28,12 @@ public class BasketTest {
         assertEquals(1, basket.itemCount());
     }
 
+    @Test
+    public void canAddMultipleToBasket(){
+        basket.add(banana);
+        basket.add(banana);
+        basket.add(apple);
+        assertEquals(3, basket.itemCount());
+    }
+
 }
