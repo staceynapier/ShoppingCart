@@ -12,4 +12,8 @@ public class Apple extends Item {
         super(price);
         this.type = type;
     }
+
+    public String getType() {
+        return type;
+    }
 }
