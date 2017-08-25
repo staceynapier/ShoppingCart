@@ -22,4 +22,9 @@ public class AppleTest {
     public void hasPrice(){
         assertEquals(0.30, apple.getPrice());
     }
+
+    @Test
+    public void hasType(){
+        assertEquals("Golden Delicious", apple.getType());
+    }
 }
