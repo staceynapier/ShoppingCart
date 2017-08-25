@@ -22,4 +22,8 @@ public class Basket {
     public void clearBasket() {
         contents.clear();
     }
+
+    public void removeItem(Item item) {
+        contents.remove(item);
+    }
 }
