@@ -20,11 +20,11 @@ public class BasketTest {
         basket = new Basket();
         apple = new Apple(0.25, "Own Brand", "Braeburn");
         banana = new Banana(0.45, "Chiquita");
+        basket.add(apple);
     }
 
     @Test
     public void canAddToBasket(){
-        basket.add(banana);
         assertEquals(1, basket.itemCount());
     }
 
@@ -32,14 +32,12 @@ public class BasketTest {
     public void canAddMultipleToBasket(){
         basket.add(banana);
         basket.add(banana);
-        basket.add(apple);
         assertEquals(3, basket.itemCount());
     }
 
     @Test
     public void canEmptyBasket(){
         basket.add(banana);
-        basket.add(apple);
         basket.clearBasket();
         assertEquals(0, basket.itemCount());
     }
@@ -47,9 +45,15 @@ public class BasketTest {
     @Test
     public void canRemoveItemFromBasket(){
         basket.add(banana);
-        basket.add(apple);
         basket.removeItem(apple);
         assertEquals(1, basket.itemCount());
+    }
+
+    @Test
+    public void canCalculateTotal(){
+        basket.add(apple);
+        basket.add(banana);
+        assertEquals(0.95, basket.calculateTotal();
     }
 
 }
