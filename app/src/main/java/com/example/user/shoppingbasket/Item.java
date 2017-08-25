@@ -5,4 +5,14 @@ package com.example.user.shoppingbasket;
  */
 
 public abstract class Item {
+
+    private Double price;
+
+    public Item(Double price){
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }

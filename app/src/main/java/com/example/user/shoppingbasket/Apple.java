@@ -5,4 +5,11 @@ package com.example.user.shoppingbasket;
  */
 
 public class Apple extends Item {
+
+    String type;
+
+    public Apple(double price, String type) {
+        super(price);
+        this.type = type;
+    }
 }
