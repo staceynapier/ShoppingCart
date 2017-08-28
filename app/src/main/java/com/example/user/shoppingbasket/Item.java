@@ -6,7 +6,7 @@ package com.example.user.shoppingbasket;
 
 public abstract class Item {
 
-    private Double price;
+    private double price;
     private String brand;
 
     public Item(Double price, String brand){

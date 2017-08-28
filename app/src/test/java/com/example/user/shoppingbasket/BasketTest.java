@@ -14,6 +14,7 @@ public class BasketTest {
     Basket basket;
     Apple apple;
     Banana banana;
+    Banana banana1;
 
     @Before
     public void before(){
@@ -54,6 +55,20 @@ public class BasketTest {
         basket.add(apple);
         basket.add(banana);
         assertEquals(0.95, basket.calculateTotal());
+    }
+
+    @Test
+    public void canApplyBogof(){
+        basket.add(apple);
+        assertEquals(0.25, basket.calculateTotal());
+    }
+
+    @Test
+    public void canApply10Off(){
+        banana1 = new Banana(42.00, "Golden");
+        basket.clearBasket();
+        basket.add(banana1);
+        assertEquals(37.80, basket.calculateTotal());
     }
 
 }

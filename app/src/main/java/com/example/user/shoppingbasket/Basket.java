@@ -33,6 +33,11 @@ public class Basket {
             double price = item.getPrice();
             total = total + price;
         }
-        return total;
+        if (total > 20) {
+            return (total * 0.9);
+        }
+        else return total;
     }
+
+
 }
